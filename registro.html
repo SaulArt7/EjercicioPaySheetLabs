@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- Mayúscula en plantilla VS HTML:5, minúscula en quick Start de Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Revisar si Bootstrap falla, esta línea no incluida en Bootstrap si en plantilla básica de VS HTML:5-->
+    <!-- Bootstrap CSS -->
+    <link href="assets/libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css"> Si se desea cargar mimificado DevOps***** -->
+    <!-- My Styles with Css -->
+    <link rel="stylesheet" href="mystyle.css" />
+    <link
+      rel="icon"
+      href="assets/img/icons/icononaveespacial.png"
+      type="image/png"
+    />
+    <title>By Sard</title>
+  </head>
+  <body>
+    <!--     NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-green-dark bg-green">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Paysheet labs</a>
+
+        <div class="d-flex">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="registro.html">Registrar Usuarios</a>
+            </li>
+           <!--  <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li> -->
+          </ul>
+        </div> 
+    </div>
+
+
+        <div class="d-flex">
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle texto-blanco"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              NombreUsuario()
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">NombreUsuario()</a></li>
+              <li><a class="dropdown-item" href="StrengSesion.html">Portal Dr. Streng</a></li>
+              <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--     NavBar - End -->
+
+    <!--     Contenedor de Form de Datos de Inicio de Sesión -->
+
+    <div class="row justify-content-center mt-5">
+      <div
+        class="col-3"
+        style="
+          box-shadow: 0px 5px 24px 0px #c0b5b5; /*background-color: rgb(136, 6, 6);*/
+        "
+      >
+        <form action="registro.html">
+          <div id="emailHelp" class="h4 text-center mt-3">
+            Registrar Usuario
+            <hr />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre de Usuario</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Correo Electrónico</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="nombresUsuario" class="form-label"
+              >Nombres</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="nombresUsuario"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="apellidosUsuario" class="form-label"
+              >Apellidos</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="apellidosUsuario"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="docIDUsuario" class="form-label"
+              >Documento de Identidad</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="docIDUsuario"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="salarioAsignado" class="form-label"
+              >Salario Asignado</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="salarioAsignado"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="tipoArl" class="form-label"
+            >Tipo Arl</label>
+        </div>
+        <div class="mb-3">
+            <select class="form-select" id="tipoArl">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Clase I</option>
+              <option value="2">Clase II</option>
+              <option value="3">Clase III</option>
+              <option value="3">Clase IV</option>
+              <option value="3">Clase V</option>
+            </select>
+            <!-- <label class="input-group-text" for="tipoArl"></label> -->
+        </div>
+
+        <div class="input-group">
+            <label for="cajaCompensacion" class="form-label"
+            >Caja de Compensación</label>
+        </div>
+        <div  class="mb-3">
+            <select class="form-select" id="cajaCompensacion">
+              <option selected>Selecciona una opción</option>
+              <option value="1">Cajasan</option>
+              <option value="2">Cofrem</option>
+              <option value="4">Colsubsidio</option>
+              <option value="5">Comfaboy</option>
+              <option value="6">Comfandy</option>
+              <option value="7">Compensar</option>
+            </select>
+            <!-- <label class="input-group-text" for="tipoArl"></label> -->
+        </div>
+        
+   
+   
+
+
+
+
+          <!-- <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+          <div class="mt-4 mb-3 text-center">
+            <button type="submit" class="btn btn-primary bg-green" onclick="">
+              Iniciar Sesión
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-8">
+
+<img class="mt-4" src="assets/img/Money_SVG.svg" alt="">
+
+      </div>
+
+    </div>
+    <!--     Contenedor de Form de Datos de Inicio de Sesión - End -->
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script> Si se desea cargar mimificado DevOps***** -->
+  </body>
+</html>
