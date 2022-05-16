@@ -1,0 +1,119 @@
+body {
+   /*  background: url("Fuentes/i1nicio.png") no-repeat center top fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+ background-color: black;
+  }
+  
+  .bg-green {
+    background-color: #01504a /* var(--bs-bg-opacity) */ !important;
+  }
+  
+  .navbar-green-dark .navbar-brand {
+    color: #ffffff;
+  }
+  .navbar-green-dark .navbar-brand:hover,
+  .navbar-green-dark .navbar-brand:focus {
+    color: #fff;
+  }
+  .navbar-green-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.55);
+  }
+  .navbar-green-dark .navbar-nav .nav-link:hover,
+  .navbar-green-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .navbar-green-dark .navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.25);
+  }
+  .navbar-green-dark .navbar-nav .show > .nav-link,
+  .navbar-green-dark .navbar-nav .nav-link.active {
+    color: #fff;
+  }
+  .navbar-green-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.55);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .navbar-green-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-green-dark .navbar-text {
+    color: rgba(255, 255, 255, 0.55);
+  }
+  .navbar-green-dark .navbar-text a,
+  .navbar-green-dark .navbar-text a:hover,
+  .navbar-green-dark .navbar-text a:focus {
+    color: #fff;
+  }
+  
+  .texto-blanco {
+    color: #ffffff;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #ffffff;
+  }
+  
+  .bg-black {
+    background-color: rgb(105, 122, 8);
+  }
+  
+  /* :root{
+    background-color: rgb(99, 18, 18);
+  } */
+  
+  #portal {
+    margin: auto;
+    margin-top: 200px;
+    width: 1px;
+    height: 1px;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 100px 40px rgba(255, 208, 0, 0.767);
+  
+    animation: rotate 1s linear infinite;
+  }
+  
+  .chispa {
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background: linear-gradient(orange, black);
+    margin: auto;
+    transform-origin: top left;
+  
+    animation: resizer 1s ease-in-out infinite;
+  }
+  
+  @keyframes resizer {
+    0% {
+      height: 100px;
+    }
+    50% {
+      height: 150px;
+    }
+    100% {
+      height: 100px;
+    }
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* 
+  body {
+    background: url("assets/img/backgrounds/DegradedBlue.jpg") no-repeat center
+      center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+   */
+  
