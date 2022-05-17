@@ -1,10 +1,10 @@
 body {
-   /*  background: url("Fuentes/i1nicio.png") no-repeat center top fixed; */
+background: url("assets/img/backgrounds/inicioStreng.png") no-repeat center top fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
- background-color: black;
+/*  background-color: rgb(64, 207, 255); */
   }
   
   .bg-green {
